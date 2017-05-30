@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".FlaggerMain"
+                android:background="@android:color/background_dark">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@mipmap/flaggers"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome To Flaggers! Enter your name below and press the button to start!"
+        android:textSize="@dimen/abc_text_size_body_1_material"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:lineSpacingMultiplier="2.0"
+        android:id="@+id/textView"
+        android:textColor="@android:color/holo_blue_light"
+        android:longClickable="false"
+        android:outlineProvider="bounds"
+        android:fontFamily="@android:string/dialog_alert_title"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Flagging!"
+        android:id="@+id/startButton"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@color/button_material_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editNameText"
+        android:hint="Enter your name here!"
+        android:focusable="true"
+        android:layout_above="@+id/startButton"
+        android:layout_alignLeft="@+id/startButton"
+        android:layout_alignStart="@+id/startButton"
+        android:background="@android:color/white"
+        android:editable="false"/>
+</RelativeLayout>
