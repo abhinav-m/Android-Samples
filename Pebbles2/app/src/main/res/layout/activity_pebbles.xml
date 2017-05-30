@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:screenOrientation="landscape"
+                tools:context=".PebblesMain"
+                android:background="#db4d1004">
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="1"
+            android:gravity="center"
+            android:id="@+id/tLtextView"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginStart="220dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/white"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:outlineProvider="bounds"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="2"
+            android:gravity="center"
+            android:id="@+id/tRtextView"
+            android:background="#000000"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:outlineProvider="bounds"
+            android:layout_above="@+id/ansTextView"
+            android:layout_toRightOf="@+id/tLtextView"
+            android:layout_toEndOf="@+id/tLtextView"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Ans"
+            android:id="@+id/ansTextView"
+            android:gravity="center"
+            android:layout_below="@+id/tLtextView"
+            android:layout_alignLeft="@+id/tLtextView"
+            android:layout_alignStart="@+id/tLtextView"
+            android:background="#2238ff"
+            android:textSize="20sp"
+            android:outlineProvider="bounds"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="3"
+            android:gravity="center"
+            android:id="@+id/bRtextView"
+            android:background="#15ff1f"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:outlineProvider="bounds"
+            android:layout_below="@+id/tLtextView"
+            android:layout_toRightOf="@+id/ansTextView"
+            android:layout_toEndOf="@+id/ansTextView"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="+"
+            android:id="@+id/plusTLButton"
+            android:textSize="30sp"
+            android:background="#2238ff"
+            android:textColor="@android:color/white"
+            android:layout_alignTop="@+id/tLtextView"
+            android:layout_toLeftOf="@+id/ansTextView"
+            android:layout_toStartOf="@+id/ansTextView"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="-"
+            android:id="@+id/subBLbutton"
+            android:textSize="30sp"
+            android:background="#2238ff"
+            android:textColor="@android:color/white"
+            android:layout_alignBottom="@+id/ansTextView"
+            android:layout_toLeftOf="@+id/ansTextView"
+            android:layout_toStartOf="@+id/ansTextView"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="X"
+            android:id="@+id/mulTRButton"
+            android:textSize="30sp"
+            android:background="#2238ff"
+            android:textColor="@android:color/white"
+            android:layout_alignTop="@+id/tRtextView"
+            android:layout_toRightOf="@+id/tRtextView"
+            android:layout_toEndOf="@+id/tRtextView"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="/"
+            android:id="@+id/divBRButton"
+            android:textSize="30sp"
+            android:background="#2238ff"
+            android:textColor="@android:color/white"
+            android:layout_alignTop="@+id/subBLbutton"
+            android:layout_alignLeft="@+id/mulTRButton"
+            android:layout_alignStart="@+id/mulTRButton"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
