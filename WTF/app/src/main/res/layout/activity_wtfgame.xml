@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:theme="@style/AppTheme"
+                tools:context="learn.abhinav.wtf.WTFGame"
+                android:background="#1a5094">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="3"
+        android:id="@+id/number1TextView"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/operatorTextView"
+        android:layout_toStartOf="@+id/operatorTextView"
+        android:background="@android:color/white"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="&lt;"
+        android:gravity="center"
+        android:id="@+id/operatorTextView"
+        android:background="#ff8942"
+        android:textSize="50sp"
+        android:layout_alignTop="@+id/number1TextView"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:text="4"
+        android:gravity="center"
+        android:id="@+id/number2textView"
+        android:layout_alignTop="@+id/operatorTextView"
+        android:layout_toRightOf="@+id/operatorTextView"
+        android:layout_toEndOf="@+id/operatorTextView"
+        android:textColor="@android:color/white"
+        android:background="#000000"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="False"
+        android:id="@+id/falseButton"
+        android:background="@drawable/roundbutton1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="True"
+        android:background="@drawable/roundbutton"
+        android:id="@+id/trueButton"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="WTF"
+        android:id="@+id/countDown"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lives Left"
+        android:id="@+id/livesTextView"
+        android:layout_below="@+id/number1TextView"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

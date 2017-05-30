@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                tools:context=".WtfMain"
+                android:background="#1f3963">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:gravity="center"
+        android:id="@+id/buttonStart"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/background_light"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WTF"
+        android:id="@+id/startCount"
+        android:textColor="@android:color/white"
+        android:textStyle="normal|bold"
+
+        android:textSize="30sp"
+        android:layout_above="@+id/buttonStart"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whether true or false"
+        android:id="@+id/fullFormWTF"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/startCount"/>
+</RelativeLayout>
